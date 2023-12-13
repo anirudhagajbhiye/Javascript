@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Find the maximum number in an array of numbers</h1>
+
+    <p id="demo">The highsest number is</p>
+
+    <script>
+        const points = [25, 32, 16, 18, 82, 92, 98, 120];
+        document.getElementById("demo").innerHTML = myArrayMax(points);
+
+        function myArrayMax(arr) {
+            return Math.max.apply(null, arr);
+        }
+    </script>
+</body>
+</html>

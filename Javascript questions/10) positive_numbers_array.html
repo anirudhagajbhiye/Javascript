@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Returns only positive</h1>
+        <p id="demo"></p>
+
+        <script>
+            const numbersArray = [-5, 10, -3, 8, -2, 15, -7, 4, -1, 20];
+
+            function filterPositiveNumbersLoop(arr) {
+                const positiveNumbers = [];
+
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] > 0) {
+                        positiveNumbers.push(arr[i]);
+                    }
+                }
+                return positiveNumbers;
+            }
+            let positiveNumbers = filterPositiveNumbersLoop(numbersArray);
+            console.log(positiveNumbers);
+            document.getElementById("demo").innerHTML = positiveNumbers;
+        </script>
+    </body>
+</html>
