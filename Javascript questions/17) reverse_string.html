@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Reverse string</h1>
+    <p id="demo"></p>
+
+    <script>
+        function reverseString(str) {
+            return str.split('').reverse().join('');
+        }
+
+        let originalString = "Hello, World!";
+        let reversedString = reverseString(originalString);
+
+        console.log(reverseString);
+        let result = reversedString;
+        document.getElementById("demo").innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>15. Create a function that will return a Boolean specifying if a number is prime.</h1>
+    <p id="demo"></p>
+
+    <script>
+        function  isPrime(number) {
+            if (number < 2) {
+                return false;
+            }
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i ===0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        console.log(isPrime(3));
+        console.log(isPrime(7));
+        console.log(isPrime(12));
+        console.log(isPrime(14));
+    </script>
+</body>
+</html>
