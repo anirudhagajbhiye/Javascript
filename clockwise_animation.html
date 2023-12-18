@@ -35,28 +35,35 @@
           if (posLeft < 350) {
             posLeft++;
             elem.style.left = posLeft + "px";
-          } else {
+          }
+          else {
             direction = 'down';
           }
-        } else if (direction === 'down') {
+        }
+        if (direction === 'down') {
           if (posTop < 350) {
             posTop++;
             elem.style.top = posTop + "px";
-          } else {
+          }
+          else {
             direction = 'left';
           }
-        } else if (direction === 'left') {
+        }
+        if (direction === 'left') {
           if (posLeft > 0) {
             posLeft--;
             elem.style.left = posLeft + "px";
-          } else {
+          }
+          else {
             direction = 'up';
           }
-        } else if (direction === 'up') {
+        }
+        if (direction === 'up') {
           if (posTop > 0) {
             posTop--;
             elem.style.top = posTop + "px";
-          } else {
+          }
+          else {
             direction = 'right';
           }
         }
